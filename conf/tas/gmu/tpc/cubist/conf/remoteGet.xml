@@ -1,0 +1,4 @@
+<oracle.CubistOracle.common.CubistConfig
+            pathToCubist="conf/tas/gmu/tpc/cubist/demo_all"
+            model="remoteGetRtt"
+            targetFeature="remoteGetRtt"/>

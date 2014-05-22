@@ -1,0 +1,39 @@
+
+
+@RELATION dataset3
+
+@ATTRIBUTE NumNodes                                      NUMERIC
+@ATTRIBUTE ReplicationDegree                             NUMERIC
+@ATTRIBUTE AvgPutsPerWrTransaction                       NUMERIC
+@ATTRIBUTE AvgPrepareCommandSize                         NUMERIC
+@ATTRIBUTE MemoryInfo_used                               NUMERIC
+@ATTRIBUTE AvgGetsPerROTransaction                       NUMERIC
+@ATTRIBUTE AvgGetsPerWrTransaction                       NUMERIC
+@ATTRIBUTE LocalUpdateTxLocalServiceTime                 NUMERIC
+@ATTRIBUTE LocalUpdateTxPrepareServiceTime               NUMERIC
+@ATTRIBUTE LocalUpdateTxCommitServiceTime                NUMERIC
+@ATTRIBUTE LocalUpdateTxLocalRollbackServiceTime         NUMERIC
+@ATTRIBUTE LocalUpdateTxRemoteRollbackServiceTime        NUMERIC
+@ATTRIBUTE RemoteGetServiceTime                          NUMERIC
+@ATTRIBUTE GMUClusteredGetCommandServiceTime             NUMERIC
+@ATTRIBUTE RemoteUpdateTxPrepareServiceTime              NUMERIC
+@ATTRIBUTE RemoteUpdateTxCommitServiceTime               NUMERIC
+@ATTRIBUTE RemoteUpdateTxRollbackServiceTime             NUMERIC
+@ATTRIBUTE ReadOnlyTxTotalCpuTime                        NUMERIC
+@ATTRIBUTE PercentageSuccessWriteTransactions            NUMERIC
+@ATTRIBUTE PercentageWriteTransactions                   NUMERIC
+@ATTRIBUTE AvgLocalGetTime                               NUMERIC
+@ATTRIBUTE AverageWriteTime                              NUMERIC
+@ATTRIBUTE AvgTxArrivalRate                              NUMERIC
+@ATTRIBUTE AvgNTCBTime                                   NUMERIC
+@ATTRIBUTE NumberOfEntries                               NUMERIC
+@ATTRIBUTE AvgClusteredGetCommandReplySize               NUMERIC
+@ATTRIBUTE MAX_ACTIVE_THREADS                            NUMERIC
+@ATTRIBUTE CORE_PER_CPU                                  NUMERIC
+@ATTRIBUTE ACF                                           NUMERIC
+@ATTRIBUTE ReplicationProtocol                           NUMERIC
+@ATTRIBUTE ISOLATION_LEVEL                               NUMERIC
+@ATTRIBUTE AvgNumPutsBySuccessfulLocalTx                 NUMERIC
+@ATTRIBUTE LocalReadOnlyTxLocalServiceTime               NUMERIC
+@ATTRIBUTE AvgRemoteGetRtt                               NUMERIC
+@DATA

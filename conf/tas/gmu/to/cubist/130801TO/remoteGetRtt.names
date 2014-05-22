@@ -1,0 +1,18 @@
+remoteGetRtt
+
+numNodes:continuous
+numThreads:continuous
+remoteNodesInCommit:continuous
+preparePerSec:continuous
+commitPerSec:continuous
+rollbackPerSec:continuous
+remoteGetPerSec:continuous
+prepareMexSize:continuous
+cpuUtilization:continuous
+memory:continuous
+prepareRtt:continuous
+commitRtt:continuous
+remoteGetRtt:continuous
+trafficP:=remoteNodesInCommit*prepareMexSize*preparePerSec.
+
+attributes excluded: prepareRtt, commitRtt, remoteGetRtt, trafficP,cpuUtilization

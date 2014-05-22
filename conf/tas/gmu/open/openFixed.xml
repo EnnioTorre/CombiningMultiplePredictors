@@ -1,0 +1,7 @@
+<common.config.TasConfiguration
+    timeUnit="MICROSECONDS">
+    <common.config.SolverFactoryConfig
+        probabilityGenerator="conf/gmu/recursiveProbabilityGenerator.xml"
+        openSolverConfig="conf/gmu/fixedCpuFixedNet.xml">
+    </common.config.SolverFactoryConfig>
+</common.config.TasConfiguration>

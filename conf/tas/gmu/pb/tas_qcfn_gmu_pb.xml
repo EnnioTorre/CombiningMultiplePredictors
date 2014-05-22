@@ -1,0 +1,8 @@
+<common.config.TasConfiguration
+    timeUnit="MICROSECONDS">
+    <common.config.SolverFactoryConfig
+        probabilityGenerator="conf/tas/gmu/pb/recursion.xml"
+        openSolverConfig="conf/tas/gmu/pb/qcfn.xml"
+        closedSolverConfig="conf/tas/gmu/closed.xml">
+    </common.config.SolverFactoryConfig>
+</common.config.TasConfiguration>

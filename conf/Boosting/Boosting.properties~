@@ -1,0 +1,20 @@
+#configure the Learner
+#oracles as classpath name
+Oracles = eu.cloudtm.OracleHandlers.TasHandler,eu.cloudtm.weka.Cubist.Cubist
+#,weka.classifiers.functions.MultilayerPerceptron,weka.classifiers.functions.SMOreg
+#tasOracle.common.TasOracle,morphr.MorphR
+#,eu.cloudtm.autonomicManager.simulator.SimulatorOracle,morphr.MorphR
+TasARFF = true
+DAGSARFF = true
+MorphRARFF = true
+ValidationSetARFF = true
+CSVOutput = true
+CsvOutputDirectory=CsvOutput
+CsvInputDirectory=dataset
+ARFFwithInputOracleParameterpath = conf/Boosting/dataset.arff
+Iterations = 10
+combiner = eu.cloudtm.weka.ensemble.EnsembleML
+#eu.cloudtm.weka.Cubist.Cubist
+Target = throughput
+
+

@@ -1,0 +1,15 @@
+#configure the Learner
+#weka learner as classpath name
+Oracles = weka.classifiers.functions.MultilayerPerceptron
+TasARFF = true
+DAGSARFF = true
+MorphRARFF = true
+ValidationSetARFF = true
+CSVOutput = true
+CsvOutputDirectory=CsvOutput
+CsvInputDirectory=dataset
+ARFFwithInputOracleParameterpath = conf/Boosting/dataset.arff
+Options = -C,-I,-H,4
+
+
+

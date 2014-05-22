@@ -1,0 +1,19 @@
+
+
+@RELATION dataset3
+
+@ATTRIBUTE MemoryInfo_used				 NUMERIC
+@ATTRIBUTE AvgGetsPerROTransaction			 NUMERIC
+@ATTRIBUTE AvgGetsPerWrTransaction			 NUMERIC
+@ATTRIBUTE AvgPutsPerWrTransaction			 NUMERIC
+@ATTRIBUTE LocalReadOnlyTxLocalServiceTime		 NUMERIC
+@ATTRIBUTE LocalUpdateTxLocalServiceTime		 NUMERIC
+@ATTRIBUTE AvgClusteredGetCommandReplySize		 NUMERIC
+@ATTRIBUTE AvgPrepareCommandSize			 NUMERIC
+@ATTRIBUTE PercentageWriteTransactions			 NUMERIC
+@ATTRIBUTE NumberOfEntries 				 NUMERIC
+@ATTRIBUTE NumNodes					 NUMERIC
+@ATTRIBUTE ReplicationDegree				 NUMERIC
+@ATTRIBUTE ReplicationProtocol				 NUMERIC
+@ATTRIBUTE PercentageSuccessWriteTransactions	         NUMERIC
+@DATA

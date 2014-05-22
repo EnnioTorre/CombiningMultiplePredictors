@@ -1,0 +1,12 @@
+To Use DAGS Configure the SimulatorOracle.properties.Fill up directory and execute path.
+exec=timeout 30 s ./Debug... run c program with a timeout,remove timeout command if it is not necessary kill the program.
+
+Compile:
+
+cd Debug/ make clean make
+
+Execute:
+
+./Debug/DAGSWithCubist
+
+

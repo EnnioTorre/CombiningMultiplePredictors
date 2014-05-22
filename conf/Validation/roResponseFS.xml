@@ -1,0 +1,34 @@
+<config.ValidationConfiguration>
+    <config.GlobalValidationConfig
+            oneFolder="true"
+            validateAll="true"
+            replicationProtocol="2PC"
+            numThreads="1"
+            testPath="csvfile"
+            output="lib/MorphR/roResponseFS.data"
+            minThreads="1"
+            maxThreads="16"
+            minNodes="2"
+            maxNodes="150"
+            minWrites="1"
+            maxWrites="1000"
+            minKeys="1"
+            maxKeys="10000000"
+            minGets="1"
+            maxGets="10000000"
+            minWarehouses="0"
+            maxWarehouses="17"
+            minWritePercentage="0"
+            maxWritePercentage="1"
+            minReplicationDegree="1"
+            maxReplicationDegree="150"/>
+    <config.FactoriesConfig
+            printerClass="morphR.MorphRPrinter"
+            validatorConfig="conf/Validation/MorphRValidator.xml"/>
+</config.ValidationConfiguration>
+
+<!-- throughputFS.data
+     abortFS.data.data
+     wrResponseFS.data
+     roResponseFS.data
+                   -->

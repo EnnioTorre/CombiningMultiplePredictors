@@ -1,0 +1,161 @@
+#logger
+log4j.rootLogger=info,R
+log4j.logger.MorphRLogger=info,MorphR
+log4j.logger.TasLogger=info,Tas
+log4j.logger.SOLogger=info,SO
+log4j.logger.VLogger=info,V
+log4j.logger.CombinedLogger=info,CL
+log4j.logger.ARFFLogger=info,ARFF
+log4j.category.eu.cloudtm.boosting=info,BoostingLog
+log4j.category.eu.cloudtm.weka.ensemble=info,BoostingLog
+log4j.category.eu.cloudtm.weka.Cubist=info,BoostingLog
+log4j.category.eu.cloudtm.weka.Tas=info,BoostingLog
+log4j.category.eu.cloudtm.Knn=info,KnnLog
+log4j.category.eu.cloudtm.probing=info,ProbingLog
+
+#additivity disabling
+log4j.additivity.TasLogger=false
+log4j.additivity.MorphRLogger=false
+log4j.additivity.SOLogger=false
+log4j.additivity.VLogger=false
+log4j.additivity.CombinedLogger=false
+log4j.additivity.ARFFLogger=false
+log4j.additivity.eu.cloudtm.Boosting=false
+log4j.additivity.eu.cloudtm.Knn=false
+log4j.additivity.eu.cloudtm.probing=false
+
+#root log
+log4j.appender.R=org.apache.log4j.FileAppender
+log4j.appender.R.File=log/ApplicationDebugging.log
+log4j.appender.R.append=false
+
+log4j.appender.R.MaxFileSize=100MB
+# Keep one backup file
+log4j.appender.R.MaxBackupIndex=1
+
+log4j.appender.R.layout=org.apache.log4j.PatternLayout
+
+# Pattern to output the caller's file name and line number.
+log4j.appender.R.layout.ConversionPattern=%5p [%t] (%F:%L) - %m%n
+
+#MorphR log
+
+log4j.appender.MorphR=org.apache.log4j.FileAppender
+log4j.appender.MorphR.File=arff/MorphRPrediction.arff
+log4j.appender.MorphR.append=true
+
+#log4j.appender.MorphR.MaxFileSize=100KB
+# Keep one backup file
+# log4j.appender.MorphR.MaxBackupIndex=1
+
+log4j.appender.MorphR.layout=org.apache.log4j.PatternLayout
+
+#Tas Log
+log4j.appender.Tas=org.apache.log4j.FileAppender
+log4j.appender.Tas.File=arff/TasPrediction.arff
+log4j.appender.Tas.append=true
+
+#log4j.appender.Tas.MaxFileSize=100KB
+# Keep one backup file
+# log4j.appender.Tas.MaxBackupIndex=1
+
+log4j.appender.Tas.layout=org.apache.log4j.PatternLayout
+
+#Simulator Log
+
+log4j.appender.SO=org.apache.log4j.FileAppender
+log4j.appender.SO.File=arff/SimulatorOraclePrediction.arff
+log4j.appender.SO.append=true
+
+#log4j.appender.SO.MaxFileSize=100KB
+# Keep one backup file
+# log4j.appender.SO.MaxBackupIndex=1
+
+log4j.appender.SO.layout=org.apache.log4j.PatternLayout
+
+#validationSet log
+log4j.appender.V=org.apache.log4j.FileAppender
+log4j.appender.V.File=ValidationSet.arff
+log4j.appender.V.append=true
+
+log4j.appender.V.layout=org.apache.log4j.PatternLayout
+
+#combined log
+
+log4j.appender.CL=org.apache.log4j.FileAppender
+log4j.appender.CL.File=arff/CombinedPrediction.arff
+log4j.appender.CL.append=true
+
+#log4j.appender.CombinedLogger.MaxFileSize=100KB
+# Keep one backup file
+# log4j.appender.CombinedLogger.MaxBackupIndex=1
+
+log4j.appender.CL.layout=org.apache.log4j.PatternLayout
+
+#arff log
+
+log4j.appender.ARFF=org.apache.log4j.FileAppender
+log4j.appender.ARFF.File=arff/DataSet.arff
+log4j.appender.ARFF.append=false
+
+#log4j.appender.CombinedLogger.MaxFileSize=100KB
+# Keep one backup file
+# log4j.appender.CombinedLogger.MaxBackupIndex=1
+
+log4j.appender.ARFF.layout=org.apache.log4j.PatternLayout
+
+#Boosting log
+log4j.appender.BoostingLog=org.apache.log4j.RollingFileAppender
+log4j.appender.BoostingLog.File=log/Boosting.log
+log4j.appender.BoostingLog.append=false
+
+log4j.appender.BoostingLog.MaxFileSize=100MB
+Keep one backup file
+log4j.appender.BoostingLog.MaxBackupIndex=1
+
+log4j.appender.BoostingLog.layout=org.apache.log4j.PatternLayout
+
+# Pattern to output the caller's file name and line number.
+log4j.appender.BoostingLog.layout.ConversionPattern=%5p [%t] (%F:%L) - %m%n
+
+#Knn log
+log4j.appender.KnnLog=org.apache.log4j.RollingFileAppender
+log4j.appender.KnnLog.File=log/knn.log
+log4j.appender.KnnLog.append=false
+
+log4j.appender.KnnLog.MaxFileSize=100MB
+Keep one backup file
+log4j.appender.KnnLog.MaxBackupIndex=1
+
+log4j.appender.KnnLog.layout=org.apache.log4j.PatternLayout
+
+# Pattern to output the caller's file name and line number.
+log4j.appender.KnnLog.layout.ConversionPattern=%5p [%t] (%F:%L) - %m%n
+
+
+#Probing log
+log4j.appender.ProbingLog=org.apache.log4j.RollingFileAppender
+log4j.appender.ProbingLog.File=log/probing.log
+log4j.appender.ProbingLog.append=false
+
+log4j.appender.ProbingLog.MaxFileSize=100MB
+Keep one backup file
+log4j.appender.ProbingLog.MaxBackupIndex=1
+
+log4j.appender.ProbingLog.layout=org.apache.log4j.PatternLayout
+
+# Pattern to output the caller's file name and line number.
+log4j.appender.ProbingLog.layout.ConversionPattern=%5p [%t] (%F:%L) - %m%n
+
+
+#log Subsystem disabling
+log4j.logger.eu.cloudtm.Knn.DataSets= on
+log4j.logger.RecursiveOpenSolver.DataSets = error
+log4j.logger.parse.common.CsvParser=error
+log4j.logger.tasOracle = warn
+log4j.logger.tasOracle.rr = warn
+log4j.logger.oracle.CubistOracle = warn
+log4j.logger.CsvOracles = off
+log4j.logger.common.solver.closed = warn
+log4j.logger.common.solver.logical.open.RecursiveOpenSolver = off
+
